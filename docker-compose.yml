@@ -1,0 +1,9 @@
+version: '3'
+services:
+    rssbot:
+        build: .
+        volumes:
+            - .:/rustrssbot
+        environment:
+            - TELEGRAM_BOT_TOKEN=<YOUR_BOT_KEY>
+        restart: always
